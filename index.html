@@ -9,27 +9,28 @@
 </head>
 <body class="w-screen h-screen bg-body bg-cover" dir="rtl">
     <section class="w-screen h-screen bg-black/40 flex items-center justify-center">
-        <div class="w-screen sm:w-[600px] bg-white p-6 sm:h-3/4 sm:rounded-lg h-screen shadow-md">
+        <div class="w-screen sm:w-[600px] bg-white p-6 sm:h-3/4 sm:rounded-lg h-screen shadow-md dark:bg-gray-800">
             <form action="javascript:void(0)" class="flex flex-col items-center justify-start gap-6 h-full w-full">
-                <svg class="cursor-pointer mr-auto" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor" data-v-60f3313b=""><path d="m5.335 4.282.07.063L12 10.939l6.595-6.594a.75.75 0 0 1 1.123.99l-.063.07L13.061 12l6.594 6.595a.75.75 0 0 1-.99 1.123l-.07-.063L12 13.061l-6.595 6.594a.75.75 0 0 1-1.123-.99l.063-.07L10.939 12 4.345 5.405a.75.75 0 0 1 .99-1.123Z"></path></svg>
-                <h3 class="text-xl font-bold">ورود یا ثبت‌نام</h3>
-                <p class="text-gray-700 font-light">برای ادامه شماره موبایل خود را وارد کنید.</p>
+                <svg id="mode" class="cursor-pointer mr-auto" viewBox="0 0 24 24" width="24px" height="24px" fill="currentColor" data-v-60f3313b=""><path class="dark:fill-white" d="m5.335 4.282.07.063L12 10.939l6.595-6.594a.75.75 0 0 1 1.123.99l-.063.07L13.061 12l6.594 6.595a.75.75 0 0 1-.99 1.123l-.07-.063L12 13.061l-6.595 6.594a.75.75 0 0 1-1.123-.99l.063-.07L10.939 12 4.345 5.405a.75.75 0 0 1 .99-1.123Z"></path></svg>
+                <h3 class="text-xl font-bold dark:text-white">ورود یا ثبت‌نام</h3>
+                <p class="text-gray-700 font-light dark:text-gray-400">برای ادامه شماره موبایل خود را وارد کنید.</p>
                 <div class="border-gray-400 border-[1px] p-2 rounded-lg w-full sm:w-[320px] flex mt-5 gap-1">
-                    <input type="text" maxlength="10" dir="ltr" class="placeholder:text-right w-full outline-none h-8 bg-transparent" placeholder="شماره موبایل">
+                    <input type="text" id="phone" maxlength="10" dir="ltr" class="placeholder:text-right w-full outline-none h-8 bg-transparent" placeholder="شماره موبایل">
                     <span class="text-gray-400 m-auto">۹۸+</span>
                 </div>
                 <p class="flex text-xm w-full sm:w-[320px]">
-                    <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" fill="currentColor" class="align-top ml-2 shrink-0"><path d="M12 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 6a.75.75 0 0 1 .745.663l.005.087v7.5a.75.75 0 0 1-1.495.087l-.005-.087v-7.5A.75.75 0 0 1 12 9Zm0-3a.75.75 0 0 1 .745.663l.005.087v.75a.75.75 0 0 1-1.495.087L11.25 7.5v-.75A.75.75 0 0 1 12 6Z"></path></svg>
-                    <span class="text-gray-600">
+                    <svg viewBox="0 0 24 24" width="1.5em" height="1.5em" fill="currentColor" class="align-top ml-2 shrink-0"><path class="dark:fill-white" d="M12 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 6a.75.75 0 0 1 .745.663l.005.087v7.5a.75.75 0 0 1-1.495.087l-.005-.087v-7.5A.75.75 0 0 1 12 9Zm0-3a.75.75 0 0 1 .745.663l.005.087v.75a.75.75 0 0 1-1.495.087L11.25 7.5v-.75A.75.75 0 0 1 12 6Z"></path></svg>
+                    <span class="text-gray-600 dark:text-gray-400">
                         استفاده از علی‌بابا به معنی پذیرش
                         &nbsp;<a href="javascript:void(0)" class="text-blue-600">قوانین و مقررات</a>&nbsp;
                         این سرویس است.
                     </span>
                 </p>
-                <button type="submit" disabled class="w-full sm:w-[320px] px-5 py-3 font-medium text-white bg-blue-600 disabled:opacity-50 rounded-lg mt-auto sm:mt-0">تایید و دریافت کد</button>
+                <button type="submit" disabled id="submit" class="w-full sm:w-[320px] px-5 py-3 font-medium text-white bg-blue-600 disabled:opacity-50 rounded-lg mt-auto sm:mt-0">تایید و دریافت کد</button>
                 <a href="javascript:void(0)" class="text-blue-600 text-xm">ورود با کلمه عبور</a>
             </form>
         </div>
     </section>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
